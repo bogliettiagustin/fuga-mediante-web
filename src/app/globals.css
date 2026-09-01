@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #f0e9dd;
+  --color-ink: #131110;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-ink: var(--color-ink);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+}
