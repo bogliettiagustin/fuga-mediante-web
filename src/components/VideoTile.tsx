@@ -14,7 +14,7 @@ export default function VideoTile({
 
   if (hasError) {
     return (
-      <div className="flex aspect-square flex-col items-center justify-center gap-2 bg-ink/90 p-2 text-center">
+      <div className="flex aspect-square flex-col items-center justify-center gap-2 border-[2px] border-black bg-ink/90 p-2 text-center">
         <VideoOff className="h-5 w-5 text-cream/60" strokeWidth={1.5} />
         <span className="text-[10px] uppercase tracking-wide text-cream/60">
           Subí el video de {label}
@@ -24,7 +24,7 @@ export default function VideoTile({
   }
 
   return (
-    <div className="aspect-square overflow-hidden bg-ink">
+    <div className="aspect-square overflow-hidden border-[2px] border-black bg-ink">
       <video
         className="h-full w-full object-cover"
         src={src}
