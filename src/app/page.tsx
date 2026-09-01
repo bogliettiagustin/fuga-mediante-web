@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import IntroLoader from "@/components/IntroLoader";
-import MainContent from "@/components/MainContent";
+import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
   const [introDone, setIntroDone] = useState(false);
+  const router = useRouter();
 
   return (
     <>
@@ -20,7 +22,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         >
-          <MainContent />
+          <CountdownTimer onDone={() => router.push("/video")} />
         </motion.div>
       )}
     </>
