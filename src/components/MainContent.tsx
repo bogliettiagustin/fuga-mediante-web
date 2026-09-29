@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SquarePlay } from "lucide-react";
 import VideoGrid from "./VideoGrid";
 
-const YOUTUBE_URL = "https://www.youtube.com/watch?v=PDvyqen36b8";
+const YOUTUBE_URL = "https://www.youtube.com/watch?v=6i0Wgd-C1KU";
 
 export default function MainContent() {
   return (

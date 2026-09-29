@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { KeyRound } from "lucide-react";
 
-const TARGET_DATE = new Date("2026-09-17T19:00:00-03:00");
+const TARGET_DATE = new Date("2026-09-27T19:00:00-03:00");
 const ACCESS_PASSWORD = "morriseynotdead";
 
 function getTimeLeft() {
