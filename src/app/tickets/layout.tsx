@@ -1,10 +1,13 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import SiteNav from "@/components/SiteNav";
 
 export default function TicketsLayout({ children }: { children: ReactNode }) {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center bg-[#f4eee2] px-6 pt-[50px] pb-12 text-black">
-      <Link href="/tickets">
+    <main className="flex min-h-screen w-full flex-col items-center bg-[#f4eee2] px-6 pt-[33px] pb-12 text-black">
+      <SiteNav />
+
+      <Link href="/tickets" className="mt-10">
         <h1 className="text-center text-5xl font-bold leading-[0.9] sm:text-[60px]">
           Entradas
         </h1>

@@ -1,9 +1,31 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTicketBySlug, getTicketSlug, tickets } from "@/data/tickets";
 
 type Props = { params: Promise<{ slug: string }> };
+
+function OptionalLink({
+  href,
+  children,
+}: {
+  href?: string;
+  children: ReactNode;
+}) {
+  if (!href) return children;
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline underline-offset-4 transition-opacity hover:opacity-70"
+    >
+      {children}
+    </a>
+  );
+}
 
 export const dynamicParams = false;
 
@@ -48,9 +70,15 @@ export default async function TicketPage({ params }: Props) {
           <dt className="sr-only">Hora</dt>
           <dd>{ticket.time}</dd>
           <dt className="sr-only">Lugar</dt>
-          <dd>{ticket.venue}</dd>
+          <dd>
+            <OptionalLink href={ticket.venueUrl}>{ticket.venue}</OptionalLink>
+          </dd>
           <dt className="sr-only">Ubicación</dt>
-          <dd>{ticket.address}</dd>
+          <dd>
+            <OptionalLink href={ticket.addressUrl}>
+              {ticket.address}
+            </OptionalLink>
+          </dd>
         </dl>
 
         <a

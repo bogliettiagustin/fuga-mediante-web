@@ -1,18 +1,22 @@
 import Image from "next/image";
 import { SquarePlay } from "lucide-react";
+import SiteNav from "./SiteNav";
 import VideoGrid from "./VideoGrid";
 
 const YOUTUBE_URL = "https://www.youtube.com/watch?v=6i0Wgd-C1KU";
 
 export default function MainContent() {
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-xl flex-col items-center px-6 py-16 text-center">
+    <main className="mx-auto flex min-h-screen w-full max-w-xl flex-col items-center px-6 pt-[33px] pb-16 text-center">
+      <SiteNav />
+
       <Image
         src="/images/logo.svg"
         alt="Fuga Mediante"
         width={213}
         height={47}
         priority
+        className="mt-10"
       />
 
       <h1 className="mt-8 w-full text-center font-display uppercase leading-[0.95] text-ink text-6xl sm:text-7xl">

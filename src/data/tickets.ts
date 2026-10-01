@@ -6,7 +6,9 @@ export type Ticket = {
   dateLabel: string;
   time: string;
   venue: string;
+  venueUrl?: string;
   address: string;
+  addressUrl?: string;
   flyer: string;
   buyUrl: string;
 };
@@ -18,17 +20,19 @@ export const tickets: Ticket[] = [
     dateLabel: "Viernes 9 de octubre",
     time: "20hs",
     venue: "El Terzo Posto",
+    venueUrl: "https://www.instagram.com/elterzoposto/",
     address: "Julián Alvarez 958",
+    addressUrl: "https://maps.app.goo.gl/GdZvcNSy4X3cDZtBA",
     flyer: "/images/tickets/fuga-mediante-vista-al-fondo.png",
-    // TODO: reemplazar por el link real de venta de entradas.
-    buyUrl: "#",
+    buyUrl:
+      "https://www.terzoposto.club/entradas/show-de-fuga-mediante-2026-10-09?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
   },
 ];
 
 function slugify(value: string) {
   return value
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
