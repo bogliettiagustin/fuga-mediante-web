@@ -9,6 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function TicketsPage() {
+  if (tickets.length === 0) {
+    return (
+      <p className="mx-auto max-w-[382px] text-center text-xl font-bold leading-[1.1]">
+        No hay fechas de Fuga Mediante programadas
+      </p>
+    );
+  }
+
   return (
     <ul className="mx-auto grid w-full max-w-[1246px] grid-cols-1 justify-items-center gap-[50px] sm:grid-cols-2 lg:grid-cols-3">
       {tickets.map((ticket) => (

@@ -3,6 +3,11 @@ import type { LinkCardProps } from "@/components/LinkCard";
 /** Add a new entry here to show another card on /links. */
 export const links: LinkCardProps[] = [
   {
+    title: "Nota en Tercer Parlante",
+    href: "https://tercerparlante.com/lonuevo/fuga-mediante-adelanta-su-tercer-disco-el-primero-como-sexteto-con-disimular/",
+    image: "/images/links/nota-tercer-parlante.webp",
+  },
+  {
     title: "Solo Quería Escucharte Decirlo - Album",
     href: "https://open.spotify.com/album/4aCk5Uf6RlMdWmWmwUsstZ",
     image: "/images/links/solo-queria-escucharte-decirlo.png",
@@ -18,12 +23,6 @@ export const links: LinkCardProps[] = [
     href: "https://open.spotify.com/track/5sEdPUabFMDYkUww0lNBv3?utm_source=copy-link&utm_medium=social&utm_content=link_in_bio&autoplay_ok=1",
     image: "/images/links/no-te-confundas-mas-single.jpg",
     imagePosition: "center 6%",
-  },
-  {
-    title: "FUGA MEDIANTE EN EL TERZO 09/10",
-    href: "/tickets/fuga-mediante-vista-al-fondo-abre-new-roman-2026-10-09-el-terzo-posto",
-    image: "/images/links/fuga-mediante-terzo.jpg",
-    imagePosition: "center 4%",
   },
   {
     title: "NO TE CONFUNDÁS MÁS - Videoclip",

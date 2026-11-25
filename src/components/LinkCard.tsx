@@ -35,8 +35,8 @@ export default function LinkCard({
           style={imagePosition ? { objectPosition: imagePosition } : undefined}
         />
       </div>
-      <span className="flex w-full items-center justify-center rounded-b-[5px] bg-black px-[10px] py-5 text-center text-xl font-bold leading-[0.9] text-[#f4eee2]">
-        {title}
+      <span className="flex h-[76px] w-full items-center justify-center rounded-b-[5px] bg-black px-[10px] text-center text-xl font-bold leading-[0.9] text-[#f4eee2]">
+        <span className="line-clamp-2">{title}</span>
       </span>
     </Link>
   );

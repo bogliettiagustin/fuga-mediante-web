@@ -13,21 +13,7 @@ export type Ticket = {
   buyUrl: string;
 };
 
-export const tickets: Ticket[] = [
-  {
-    title: "FUGA MEDIANTE + VISTA AL FONDO - ABRE: NEW ROMAN",
-    date: "2026-10-09",
-    dateLabel: "Viernes 9 de octubre",
-    time: "20hs",
-    venue: "El Terzo Posto",
-    venueUrl: "https://www.instagram.com/elterzoposto/",
-    address: "Julián Alvarez 958",
-    addressUrl: "https://maps.app.goo.gl/GdZvcNSy4X3cDZtBA",
-    flyer: "/images/tickets/fuga-mediante-vista-al-fondo.png",
-    buyUrl:
-      "https://www.terzoposto.club/entradas/show-de-fuga-mediante-2026-10-09?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-  },
-];
+export const tickets: Ticket[] = [];
 
 function slugify(value: string) {
   return value
