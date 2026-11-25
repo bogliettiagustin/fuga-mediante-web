@@ -18,7 +18,7 @@ const fluxischElse = localFont({
 export const metadata: Metadata = {
   title: "Fuga Mediante — Indie is Dead, God Bless Fuga Mediante",
   description:
-    "Nuevo disco de Fuga Mediante: Indie is Dead, God Bless Fuga Mediante. Mirá el videoclip de 'No Te Confundas Más'.",
+    "Nuevo disco de Fuga Mediante: Indie is Dead, God Bless Fuga Mediante. Escuchá el nuevo single 'Disimular'.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

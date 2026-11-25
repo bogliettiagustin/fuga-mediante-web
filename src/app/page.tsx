@@ -1,10 +1,5 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import CountdownTimer from "@/components/CountdownTimer";
+import DisimularContent from "@/components/DisimularContent";
 
 export default function Home() {
-  const router = useRouter();
-
-  return <CountdownTimer onDone={() => router.push("/video")} />;
+  return <DisimularContent />;
 }
